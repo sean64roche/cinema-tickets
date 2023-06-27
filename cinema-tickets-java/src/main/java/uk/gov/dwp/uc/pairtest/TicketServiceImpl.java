@@ -46,12 +46,6 @@ public class TicketServiceImpl implements TicketService {
         new SeatReservationServiceImpl().reserveSeat(accountId, seatsTotal);
     }
 
-    private void getTotalTicketPrice() {
-
-    }
-    private void getTotalSeatReservations() {
-
-    }
     private void checkForAdultTicket(boolean adultTicketPurchased) {
         if (!adultTicketPurchased) {
             throw new NoAdultTicketPurchasedException("In order to check out you are required to " +
